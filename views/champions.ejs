@@ -1,0 +1,14 @@
+<%- include('./partials/header') %>
+<main>
+    <h2>Champions</h2>
+    <div class="champion-list">
+        <% champions.forEach((champion) => { %>
+            <div class="champion-card">
+                <img src="<%= champion.image %>" alt="<%= champion.name %>" class="champion-image">
+                <h3><%= champion.name %></h3>
+                <p><%= champion.title %></p>
+            </div>
+        <% }) %>
+    </div>
+</main>
+<%- include('./partials/footer') %>

@@ -1,0 +1,19 @@
+<%- include('./partials/header') %>
+<main>
+    <h2>Your Favorite Champions</h2>
+    <% if (favorites.length > 0) { %>
+        <ul>
+            <% favorites.forEach((fav) => { %>
+                <li>
+                    <strong><%= fav.name %></strong> - <%= fav.role %>
+                </li>
+            <% }) %>
+        </ul>
+        <form action="/reset-favorites" method="POST" style="margin-top: 20px;">
+            <button type="submit">Reset Favorites</button>
+        </form>
+    <% } else { %>
+        <p>No favorite champions added yet.</p>
+    <% } %>
+</main>
+<%- include('./partials/footer') %>

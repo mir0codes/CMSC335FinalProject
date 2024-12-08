@@ -1,0 +1,20 @@
+<%- include('./partials/header') %>
+<main>
+    <h2>Add Your Favorite Champion</h2>
+    <form id="favorite-form" action="/add-favorite" method="POST">
+        <label for="name">Champion Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="role">Champion Role</label>
+        <select name="role" id="role" required>
+            <option value="Top">Top</option>
+            <option value="Jungle">Jungle</option>
+            <option value="Mid">Mid</option>
+            <option value="ADC">ADC</option>
+            <option value="Support">Support</option>
+        </select>
+
+        <button type="submit">Add Champion</button>
+    </form>
+</main>
+<%- include('./partials/footer') %>

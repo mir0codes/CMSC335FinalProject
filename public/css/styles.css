@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #10141c; /* Dark background */
+    color: #d4d4d4; /* Light text */
+}
+
+/* Header Styles */
+header {
+    background: #0a0e12; /* Darker header background */
+    border-bottom: 3px solid #c8aa6e; /* Gold border */
+    color: #c8aa6e; /* Gold text */
+    padding: 20px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header nav a {
+    color: #d4d4d4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #c8aa6e; /* Gold hover effect */
+}
+
+/* Main Content */
+main {
+    padding: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #151a24; /* Slightly lighter than body background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: #c8aa6e; /* Gold headings */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #1c2430; /* Slightly brighter for list items */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    color: #d4d4d4;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ul li strong {
+    color: #c8aa6e; /* Gold for champion names */
+}
+
+/* Button Styles */
+button {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Reset Button */
+button[type="submit"] {
+    background-color: #008080; /* Teal background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #006666; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Primary Button */
+button.primary {
+    background-color: #c8aa6e; /* Gold for primary actions */
+    color: #0a0e12;
+}
+
+button.primary:hover {
+    background-color: #b39454; /* Slightly darker gold */
+}
+
+/* Form Styles */
+form {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background: #1c2430; /* Match list item background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #d4d4d4;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #10141c;
+    color: #d4d4d4;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #c8aa6e;
+    outline: none;
+    box-shadow: 0 0 5px rgba(200, 170, 110, 0.5);
+}
+
+form button {
+    width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 20px;
+    background: #0a0e12;
+    border-top: 3px solid #c8aa6e;
+    color: #d4d4d4;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Champion List */
+.champion-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.champion-card {
+    background: #1c2430;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.champion-card:hover {
+    transform: scale(1.05);
+}
+
+.champion-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.champion-card h3 {
+    color: #c8aa6e; 
+    margin: 10px 0 5px;
+}
+
+.champion-card p {
+    color: #d4d4d4;
+    font-style: italic;
+}
