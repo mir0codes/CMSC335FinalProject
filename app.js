@@ -4,8 +4,10 @@ const bodyParser = require("body-parser");
 const mainRoutes = require("./routes/main");
 
 const app = express();
+const dbURI = process.env.MONGODB_URI;
 
-mongoose.connect("mongodb+srv://wrubin1:PD03R2jE3uj99B8o@cluster0.6qgku.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true, useUnifiedTopology: true })
+
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("MongoDB connected"))
     .catch((err) => console.error(err));
 
